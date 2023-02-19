@@ -1,0 +1,70 @@
+.banner {
+  display: flex;
+  width: 100%;
+  position: relative;
+
+  &__img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    margin: auto;
+    
+  }
+
+  &__textbox {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    }
+
+  &__h1 {
+    font-family: $font-title;
+    color: $color-font-light;
+    font-weight: 500;
+    padding-top: 10px;
+    font-size: 60px;
+  }
+
+  &__place,
+  &__date {
+    font-family: $font-text;
+    color: $color-font-light;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  &__date {
+    font-size: 25px;
+    color: $color-font-light;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+  .banner {
+
+    &__h1 {
+      font-size: 40px;
+    }
+
+    &__place,
+    &__date {
+      font-size: 18px;
+      padding: 3px;
+    }
+
+
+    &__textbox {
+      height: 100%;
+      justify-content: flex-end;
+      padding-bottom: 20px;
+    }
+    
+  }
+
+}

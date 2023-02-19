@@ -1,0 +1,26 @@
+.prog {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    text-align: center;
+    font-family: $font-text;
+    color: $color-font-dark;
+    margin-left: 50px;
+
+    &__list {
+        list-style: none;
+        padding: 20px;
+    }
+
+    &__text {
+        padding: 20px;
+        word-spacing: 20px;
+        letter-spacing: 5px;
+    }
+
+    &__picto {
+       
+        height: 40px;
+        vertical-align: middle;
+    }
+}
