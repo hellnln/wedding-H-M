@@ -1,11 +1,12 @@
 .prog {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
+    height: 100vh;
+    // flex-direction: row-reverse;
+    justify-content: space-evenly;
     text-align: center;
     font-family: $font-text;
     color: $color-font-dark;
-    margin-left: 50px;
+    background-color: $color-background;
 
     &__list {
         list-style: none;
@@ -22,5 +23,22 @@
        
         height: 40px;
         vertical-align: middle;
+    }
+
+    &__imgBox {
+        display: flex;
+        width: 40%;
+        justify-content: center;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    &__img {
+        width: auto;    
+        height: 50%;
+        border-radius: 60% 40%;
+       
+        
+       
     }
 }

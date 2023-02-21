@@ -8,7 +8,7 @@
   &__box {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90%;
     justify-content: space-between;
     margin: auto;
     padding: 30px;
@@ -17,7 +17,7 @@
   &__photo {
     width: 49%;
     height: 100%;
-   
+    
   }
 
   &__text {
@@ -34,7 +34,7 @@
 
   &__imgBack {
     position: relative;
-    width: 60%;
+    width: 90%;
     height: 100%;
     @include box-shadow;
   

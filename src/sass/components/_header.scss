@@ -3,9 +3,7 @@
   width: 100%;
   margin: auto;
   justify-content: center;
-  position: absolute;
-  top: 255px;
-  
+  background-color: $color-background;
 
   &__box {
     width: 70%;
@@ -23,7 +21,7 @@
 
   &__text {
     font-family: $font-text;
-    color: $color-font-light;
+    color: $color-font-dark;
     text-decoration: none;
     font-size: 20px;
     padding: 10px;

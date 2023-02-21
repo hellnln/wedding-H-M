@@ -2,10 +2,12 @@
   display: flex;
   width: 100%;
   position: relative;
+  margin: auto;
+  background-color: $color-background;
 
   &__img {
     height: 300px;
-    width: 100%;
+    width: 90%;
     object-fit: cover;
     margin: auto;
     
