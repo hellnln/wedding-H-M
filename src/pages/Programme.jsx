@@ -10,17 +10,20 @@ import HMDancing1 from '../images/mariage/h&m_dancing.jpg'
 function Program() {
 
     return (
-        <div className="prog">
-            <ul className="prog__list">
-                <li className="prog__text"><img className="prog__picto" src={CityHallImg} alt="" /> - 15h00 : Mairie</li>
-                <li className="prog__text"><img className="prog__picto" src={ChurchImg} alt="" /> - 15h45 : Église</li>
-                <li className="prog__text"><img className="prog__picto" src={CocktailImg} alt="" /> - 17h00 : Cocktail</li>
-                <li className="prog__text"><img className="prog__picto" src={DinnerImg} alt="" /> - 20h00 : Dîner</li>
-                <li className="prog__text"><img className="prog__picto" src={DanceImg} alt="" /> - 23h30 : Let's Dance</li>
-            </ul>
+        <div>
+            
+           <div className="prog">
+                <ul className="prog__list">
+                    <li className="prog__text"><img className="prog__picto" src={CityHallImg} alt="" /> - 15h00 : Mairie</li>
+                    <li className="prog__text"><img className="prog__picto" src={ChurchImg} alt="" /> - 15h45 : Église</li>
+                    <li className="prog__text"><img className="prog__picto" src={CocktailImg} alt="" /> - 17h00 : Cocktail</li>
+                    <li className="prog__text"><img className="prog__picto" src={DinnerImg} alt="" /> - 20h00 : Dîner</li>
+                    <li className="prog__text"><img className="prog__picto" src={DanceImg} alt="" /> - 23h30 : Let's Dance</li>
+                </ul>
             <div className='prog__imgBox'>
                 <img className='prog__img' src={HMDancing} alt="Helene et matthieu en train de danser" />
             </div>     
+        </div>
         </div>
     )
 }

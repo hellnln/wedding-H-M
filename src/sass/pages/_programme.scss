@@ -6,7 +6,7 @@
     text-align: center;
     font-family: $font-text;
     color: $color-font-dark;
-    background-color: $color-background;
+    
 
     &__list {
         list-style: none;
@@ -41,4 +41,9 @@
         
        
     }
+}
+
+@media screen and (max-width: 768px) {
+
+
 }

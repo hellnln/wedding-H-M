@@ -2,7 +2,12 @@
 
 function Hotels() {
     return (
-        <div>liste logements</div>
+        <div>liste logements
+            <div>
+          
+            </div>
+        </div>
+       
     )
 }
 

@@ -1,69 +1,55 @@
+.main{
+  position: relative;
+  z-index: -1 ;
+}
+
 .home {
   display: flex;
+  position: absolute;
+  top: 30%;
+  left: 2%;
   flex-direction: column;
-  width: 100%;
+  width: 50%;
   background-color: $color-background;
- 
+  opacity: 80%;
+  @include box-shadow;
   
-  &__box {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    justify-content: space-between;
-    margin: auto;
-    padding: 30px;
-  }
-
-  &__photo {
-    width: 49%;
-    height: 100%;
-    
-  }
-
   &__text {
+    
     display: flex;
     flex-direction: column;
-    width: 49%;
-    padding: 30px 30px 0 30px;
+    width: 100%;
+    padding: 30px 30px 10px 30px;
     text-align: justify;
     font-family: $font-text;
     line-height: 30px;
-    background-color: white;
-
-  }
-
-  &__imgBack {
-    position: relative;
-    width: 90%;
-    height: 100%;
-    @include box-shadow;
-  
-  }
-
-  &__imgFront {
-    position: relative;
-    right: -250px;
-    bottom: 50px;
-    width: 60%;
-    height: 100%;
-    @include box-shadow;
-   
+    font-size: 14px;
+       
   }
 
   &__logo {
-    width: 60px;
-  }
-
-  &__textImg {
-    position: relative;
-    object-fit: cover;
-    border-radius: 50%;
-    width: 25%;
-    margin: auto;
-  }
-
-  &__boxImg {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding: 0 0 20px 10px;
+  }
+
+  &__logoImg {
+   
+    width: 50px;
+    
   }
 }
+
+@media screen and (max-width: 768px) {
+  
+  .home {
+    position: relative;
+    margin-top: 20px;
+    width: 90%;
+    margin: 20px auto 20px auto;
+    top: 0;
+    left: 0;
+
+    }
+  }
+

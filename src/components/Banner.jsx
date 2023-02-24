@@ -1,6 +1,7 @@
-import Img_banner from "../images/site_mariage/banniere_fleurs.jpg";
+import Img_banner from "../images/mariage/h&m_passerelle.jpg";
 import '../sass/main.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 export default function Banner() {
@@ -13,9 +14,9 @@ export default function Banner() {
       />
       <div className="banner__textbox">
         <h1 className="banner__h1">Hélène & Matthieu</h1>
-        <p className="banner__date">8 juillet 2023</p>
-        <p className="banner__place">Voivres-Lès-Le Mans</p>
-      </div>
+        <p className="banner__date"><FontAwesomeIcon className="banner__icon" icon="calendar" />8 juillet 2023</p>
+        <p className="banner__place"><FontAwesomeIcon className="banner__icon" icon="location-dot" />Voivres-Lès-Le Mans</p>
+       </div>
     </div>
   );
 }
