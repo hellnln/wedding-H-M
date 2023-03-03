@@ -1,7 +1,8 @@
 import Img_banner from "../images/mariage/h&m_passerelle-min.jpg";
 import '../sass/main.scss';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
 
 
 export default function Banner() {

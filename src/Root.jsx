@@ -16,6 +16,7 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
 
+
 library.add(far, fab, fas);
 
 
@@ -23,14 +24,14 @@ function Routing() {
     return (
        <div className="App">
          <Header />
-         <Routes>
-             <Route path="/" element={<Home />} />
-             <Route path="/programme" element={<Program />} />
-             <Route path="/hotels" element={<Hotels />} />
-             <Route path="/photos" element={<Photos />} />
-             <Route path="/confirmation" element={<Confirmation />} />
-            
-          </Routes>
+      
+            <Routes>
+               <Route path="/" element={<Home />} />
+               <Route path="/programme" element={<Program />} />
+               <Route path="/hotels" element={<Hotels />} />
+               <Route path="/photos" element={<Photos />} />
+               <Route path="/confirmation" element={<Confirmation />} />
+            </Routes>
          
        </div>
     );
