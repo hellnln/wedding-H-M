@@ -1,4 +1,4 @@
-import HMDancing from '../images/mariage/h&m_escaliers.jpg'
+import HMDancing from '../images/mariage/h&m_escaliers-min.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Dancers from '../images/mariage/weddingdanceshape.png'
 
@@ -11,7 +11,7 @@ function Program() {
     return (
         <div>
             <div className='titre'>
-                <h2 className='titre__page'>Programme de la journée</h2>
+                <h1 className='titre__page'>Programme de la journée</h1>
             </div>
             
             <div className='progMain'>
