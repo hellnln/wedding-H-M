@@ -26,10 +26,14 @@
 
   &__burger {
     width: 40px;
-    height: 40px;
+    height: 30px;
     background: transparent;
     border: none;
     color: inherit;
+    display: none;
+  }
+
+  &__xmark-icon {
     display: none;
   }
 }
@@ -96,17 +100,20 @@
     &__burger:hover{
       cursor: pointer;
     }
+
+    
   
     &__burger-bar,
     &__burger-bar::before,
     &__burger-bar::after {
       display: block;
-      width: 40px;
+      width: 30px;
       height: 3px;
       position: relative;
       border-radius: 3px;
       background: $color-font-dark;
       transition: all .5s ease-in-out;
+      
     }
 
     &__burger-bar::before,

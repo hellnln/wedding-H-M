@@ -1,6 +1,7 @@
 import '../sass/main.scss'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -27,6 +28,7 @@ console.log(showLinks)
                     <Link to='/confirmation' className="header__text slideDown-5"onClick={handleShowLinks}>Confirmation</Link>
                 </ul>
                 <button className='header__burger' onClick={handleShowLinks}>
+                
                     <span className='header__burger-bar'></span>
                 </button>
                 
