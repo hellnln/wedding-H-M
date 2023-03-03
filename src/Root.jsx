@@ -10,10 +10,13 @@ import Hotels from './pages/Hotels'
 import Photos from './pages/Photos'
 import Confirmation from './pages/Confirmation'
 import Header from './components/Header';
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { faLocationDot, faCalendar } from "@fortawesome/free-solid-svg-icons";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
 
-library.add(faLocationDot, faCalendar);
+
+library.add(far, fab, fas);
 
 
 function Routing() {

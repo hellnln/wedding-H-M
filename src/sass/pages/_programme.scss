@@ -1,8 +1,19 @@
-.prog {
+
+.progMain {
     display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: auto;
+}
+
+
+.progLeft {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 150px;
     height: 100vh;
-    // flex-direction: row-reverse;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     text-align: center;
     font-family: $font-text;
     color: $color-font-dark;
@@ -17,33 +28,77 @@
         padding: 20px;
         word-spacing: 20px;
         letter-spacing: 5px;
+        font-size: 20px;
     }
 
     &__picto {
-       
-        height: 40px;
+        height: 30px;
         vertical-align: middle;
     }
 
-    &__imgBox {
-        display: flex;
-        width: 40%;
-        justify-content: center;
-        margin: 20px;
-        padding: 20px;
-    }
-
-    &__img {
-        width: auto;    
-        height: 50%;
-        border-radius: 60% 40%;
-       
-        
-       
-    }
 }
+
+
+.progRight {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+    justify-content: flex-start;
+    align-items: center;
+    
+&__text {
+    position: absolute;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 20px;
+    word-spacing: 20px;
+    letter-spacing: 5px;
+    font-family: $font-text;
+    color: $color-font-dark;
+   
+}
+
+
+&__img {
+    
+    display: flex;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto 0 auto;
+    border-radius: 5px;
+    
+}
+}
+
+
+
 
 @media screen and (max-width: 768px) {
 
+    .progMain {
+        flex-direction: column;
+        
+    }
 
+    .progLeft {
+        width: 100%;
+        height: auto;
+
+        &__text{
+            font-size: 15px;
+        }
+    }
+
+
+    .progRight {
+        width: 100%;
+
+        &__text{
+            position: relative;
+            font-size: 20px;
+        }
+    }
 }
