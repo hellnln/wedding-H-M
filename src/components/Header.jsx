@@ -24,8 +24,8 @@ console.log(showLinks)
                     <Link to='/' className="header__text slideDown--1" onClick={handleShowLinks}>Acceuil</Link>
                     <Link to='/programme' className="header__text slideDown--2"onClick={handleShowLinks}>Programme</Link>
                     <Link to='/hotels' className="header__text slideDown--3"onClick={handleShowLinks}>Se loger</Link>
+                    <Link to='/confirmation' className="header__text slideDown--5"onClick={handleShowLinks}>Confirmez votre présence</Link>
                     <Link to='/photos' className="header__text slideDown--4"onClick={handleShowLinks}>Photos</Link>
-                    <Link to='/confirmation' className="header__text slideDown--5"onClick={handleShowLinks}>Confirmation</Link>
                 </ul>
                 <button className='header__burger' onClick={handleShowLinks}>
                     <span className='header__burger-bar'></span>
