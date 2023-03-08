@@ -1,0 +1,73 @@
+.logement {
+    
+   &__titre2 {
+    font-family: $font-text;
+    color: $color-font-dark;
+    width: 80%;
+    height: 100%;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 20px;
+    margin: auto;
+    
+   }
+
+   &__mainBox{
+    background-color: $color-font-light;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 18px;
+   }
+
+   &__titre3{
+    font-family: $font-text;
+    color: $color-font-dark;
+    font-weight: 400;
+    padding: 20px;
+    }
+
+    &__text{
+        font-family: $font-text;
+        color: $color-font-dark;
+        text-align: justify;
+        padding: 5px 0 5px 50px;
+        
+    }
+
+    &__link{
+        font-weight: 600;
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        margin: 30px auto 30px auto;
+        padding: 15px;
+        width: 100%;
+        background-color: white;
+        border-radius: 18px;
+        @include box-shadow;
+    }
+
+
+    &__picto {
+        margin: 0 20px 0 0;
+    }
+
+    &__ligne{
+        width: 150px;
+        margin: 20px auto 20px auto;
+        
+    }
+
+}
+
+a {
+    text-decoration: none;
+    color: $color-font-dark;
+}
+
+li{
+    list-style: none;
+}
