@@ -27,7 +27,7 @@ console.log(showLinks)
                     <Link to='/confirmation' className="header__text slideDown--4"onClick={handleShowLinks}>Confirmez votre présence</Link>
                     <Link to='/photos' className="header__text slideDown--5"onClick={handleShowLinks}>Photos</Link>
                 </ul>
-                <button className='header__burger' onClick={handleShowLinks}>
+                <button className='header__burger' aria-label='burger menu' onClick={handleShowLinks}>
                     <span className='header__burger-bar'></span>
                 </button>
                 

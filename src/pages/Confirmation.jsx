@@ -67,6 +67,7 @@ function Confirm() {
                 })}
                 className="form__input"
                 type="text"
+                name="prenom"
               />
               {errors.prenom && <span>{errors.prenom.message}</span>}
             </div>
@@ -80,12 +81,13 @@ function Confirm() {
                 })}
                 className="form__input"
                 type="text"
+                name="nom"
               />
               {errors.nom && <span>{errors.nom.message}</span>}
             </div>
           </div>
           <div className="form__boxBtn">
-            <button className="form__btn" disabled={!isValid}>
+            <button className="form__btn" name="rechercher" disabled={!isValid}>
               Rechercher
             </button>
           </div>
@@ -103,6 +105,7 @@ function Confirm() {
                 {...registerPresence("cocktail")}
                 type="checkbox"
                 className="presence__checkbox"
+                name="present au cocktail"
               />
               <label htmlFor="cocktail" className="presence__title">
                 Je serai présent au cocktail
@@ -113,6 +116,7 @@ function Confirm() {
                 {...registerPresence("diner")}
                 type="checkbox"
                 className="presence__checkbox"
+                name="present au dîner"
               />
               <label htmlFor="diner" className="presence__title">
                 Je serai présent au dîner
@@ -123,6 +127,7 @@ function Confirm() {
                 {...registerPresence("lendemain")}
                 type="checkbox"
                 className="presence__checkbox"
+                name="present le lendemain"
               />
               <label htmlFor="lendemain" className="presence__title">
                 Je serai présent le lendemain
@@ -133,13 +138,14 @@ function Confirm() {
                 {...registerPresence("absent")}
                 type="checkbox"
                 className="presence__checkbox"
+                name="absent"
               />
               <label htmlFor="absent" className="presence__title">
                 Je ne pourrai pas être présent à votre mariage
               </label>
             </div>
             <div className="form__boxBtn">
-              <button className="form__btn">Envoyer</button>
+              <button className="form__btn" name="envoyer">Envoyer</button>
             </div>
             
           </form>
