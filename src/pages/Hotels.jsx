@@ -47,15 +47,6 @@ function Hotels() {
             </li>
             <li className="logement__text">
                 <a 
-                className="logement__link"href="https://www.odalys-vacances.com/location-ville/pays-de-la-loire/le-mans/odalys-city-le-mans-centre-congres.html?idprestation=26828&idtypeprestation=1&tab=2&datedebut=2023-07-08&duree=1&esl-k=google-hotelads|ng|c111111111111|me|khotel-ads|p|t|dc|a222222222222|g333333333333&gclid=Cj0KCQiA0oagBhDHARIsAI-Bbgc0szDDzN__avyVI_TUmeAkTShUPx8JrrIZyz8_H1tsQNpSpJuTlEYaAsApEALw_wcB?wh_token=9afa262d-898e-4c8f-bcc1-5a194c7b30e5-203571-pms&utm_source=GoogleHPA&utm_medium=MapResults&utm_campaign=MetaI%2FO&utm_content=FR&utm_term="
-                target="_blank"
-                rel="noreferrer noopener"
-                >Odalys Appart'hôtel
-                </a>
-                - Le Mans - à environ 30min du lieu de réception
-            </li>
-            <li className="logement__text">
-                <a 
                 className="logement__link"
                 href="https://www.kyriad.com/rooms/?kameleoonEnabled=false&useSynXis=false&searchType=rooms&sr=METAGHACPC&arrival=2023-07-08&departure=2023-07-09&resortCode=FRA23178&rooms[0][adult]=2&rooms[0][child]=0&utm_source=google&utm_medium=HAC&utm_campaign=FRA23178&&adType=1&utm_content=hpa_08_07_2023_1_mapresults_FRA23178_FR_desktop_selected_12234517357__2_standard&gclid=Cj0KCQiA0oagBhDHARIsAI-Bbge6Fg3SS85y_Q1UF1LLOgErEXNz3CAlB-RJw01vdhicFwn6R-osy4UaAnulEALw_wcB"
                 target="_blank"

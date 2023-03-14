@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
 
-    &__title{
-       margin: 50px;
+    &__title {
+        margin: 50px;
         font-family: $font-title;
         font-weight: 400;
         color: $color-font-dark;
@@ -15,45 +15,113 @@
         text-align: center;
         font-family: $font-text;
     }
-
- 
 }
 
 .form {
     display: flex;
-    margin: auto;
+    margin: 40px auto 40px auto;
     width: 50%;
 
-    &__mainBox{
+    &__mainBox {
         width: 100%;
     }
-    
 
-    &__inputBox{
+    &__inputBox {
         display: flex;
         width: auto;
         flex-direction: row;
-        justify-content: space-between;
-        
+    }
+
+    &__input {
+        font-family: $font-text;
+        font-size: 15px;
     }
 
     &__box {
         display: flex;
         justify-content: space-between;
         padding: 10px;
+        align-items: center;
     }
 
     &__title {
         padding-right: 10px;
+        font-family: $font-text;
+        font-size: 15px;
     }
 
     &__boxBtn {
         display: flex;
         justify-content: center;
+        margin-top: 20px;
+    }
+
+    &__btn {
+        padding: 5px 15px 5px 15px;
+        font-family: $font-text;
+        font-size: 15px;
+        background-color: $color-font-dark;
+        color: $color-font-light;
+        border: none;
+        border-radius: 5px;
+        width: 130px;
+        @include box-shadow;
     }
 }
 
-.hrConfirm {
-    width: 200px;
-    margin: 30px auto 30px auto;   
+.presence{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+  
+    &__box{
+        display: flex;
+        padding: 5px;
+    }
+
+    &__title{
+        padding-left: 10px;
+        font-family: $font-text;
+    }
+    
+    &__msg {
+        display: flex;
+        font-family: $font-text;
+        width: 40%;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
+    
+    }
+
+@media screen and (max-width: 425px) {
+.form {
+    flex-direction: column;
+    width: 100%;
+
+    &__inputBox {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    &__title {
+        padding-left: 30px;
+    }
+}
+}
+
+.presence {
+    width: 100%;
+    padding-left: 30px;
+
+    &__msg{
+        width: 100%;
+        padding-left: 30px;
+    }
 }

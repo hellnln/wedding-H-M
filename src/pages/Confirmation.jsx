@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useState } from "react";
+import axios from "axios";
 
 const wait = function (duration = 1000) {
   return new Promise((resolve) => {
@@ -11,6 +12,7 @@ function Confirm() {
   const {
     register,
     handleSubmit,
+    watch,
     formState: { errors, isValid },
   } = useForm();
 
@@ -22,47 +24,22 @@ function Confirm() {
     mode: "onBlur",
   });
 
-
   const [displayPresence, setDisplayPresence] = useState(false);
   const [displayRemerciement, setDisplayRemerciement] = useState(false);
 
-  const items = [
-    {
-      id: "1",
-      nom: "Rousseau",
-      prenom: "Anne",
-      typeInvitation: "complet",
-    },
-
-    {
-      id: "2",
-      nom: "Rousseau",
-      prenom: "Maria",
-      typeInvitation: "cocktail",
-    },
-
-    {
-      id: "3",
-      nom: "Desse",
-      prenom: "Mathilde",
-      typeInvitation: "complet",
-    },
-  ];
+  const [firstname, lastname] = watch(["nom", "prenom"]);
 
   const onSubmit = async (data) => {
-    console.log("data", data);
+    console.log("data nom prenom", watch(["prenom", "nom"]));
     // await wait(2000); // simulate query to airtable wait for api response items
-    setDisplayPresence(true)
+    setDisplayPresence(true);
   };
 
   const onSubmitPresence = async (data) => {
     console.log("data", data);
     // await wait(2000); // simulate query to airtable wait for api response items
-    setDisplayRemerciement(true)
+    setDisplayRemerciement(true);
   };
-
-
-
 
   return (
     <div>
@@ -76,7 +53,7 @@ function Confirm() {
           votre venue !
         </p>
       </div>
-      <hr className="hrConfirm" />
+      {/* Formulaire nom prenom */}
       <form className="form" onSubmit={handleSubmit(onSubmit)}>
         <div className="form__mainBox">
           <div className="form__inputBox">
@@ -88,7 +65,7 @@ function Confirm() {
                 {...register("prenom", {
                   required: "Merci de saisir votre prénom",
                 })}
-                className="confirm__input"
+                className="form__input"
                 type="text"
               />
               {errors.prenom && <span>{errors.prenom.message}</span>}
@@ -101,13 +78,12 @@ function Confirm() {
                 {...register("nom", {
                   required: "Merci de saisir votre nom",
                 })}
-                className="confirm__input"
+                className="form__input"
                 type="text"
               />
               {errors.nom && <span>{errors.nom.message}</span>}
             </div>
           </div>
-
           <div className="form__boxBtn">
             <button className="form__btn" disabled={!isValid}>
               Rechercher
@@ -115,33 +91,65 @@ function Confirm() {
           </div>
         </div>
       </form>
-      <hr className="hrConfirm" />
+      {/* formulaire presence */}
       <div>
-        {displayPresence === true && 
-          <form onSubmit={handleSubmitPresence(onSubmitPresence)}>
-        <div>
-          <input {...registerPresence("cocktail")} type="checkbox" />
-          <label htmlFor="cocktail">Je serai présent au cocktail</label>
-        </div>
-        <div>
-          <input {...registerPresence("diner")} type="checkbox" />
-          <label htmlFor="diner">Je serai présent au dîner</label>
-        </div>
-        <div>
-          <input {...registerPresence("lendemain")} type="checkbox" />
-          <label htmlFor="lendemain">Je serai présent le lendemain</label>
-        </div>
-        <div>
-          <input {...registerPresence("absent")} type="checkbox" />
-          <label htmlFor="absent">Je ne pourrai pas être présent à votre mariage</label>
-        </div>
-        <button>Envoyer</button>
-      </form>
-      }
-      {displayRemerciement === true &&
-      <div>Votre réponse a été prise en compte</div>
-      }
-      
+        {displayPresence === true && (
+          <form
+            className="presence"
+            onSubmit={handleSubmitPresence(onSubmitPresence)}
+          >
+            <div className="presence__box">
+              <input
+                {...registerPresence("cocktail")}
+                type="checkbox"
+                className="presence__checkbox"
+              />
+              <label htmlFor="cocktail" className="presence__title">
+                Je serai présent au cocktail
+              </label>
+            </div>
+            <div className="presence__box">
+              <input
+                {...registerPresence("diner")}
+                type="checkbox"
+                className="presence__checkbox"
+              />
+              <label htmlFor="diner" className="presence__title">
+                Je serai présent au dîner
+              </label>
+            </div>
+            <div className="presence__box">
+              <input
+                {...registerPresence("lendemain")}
+                type="checkbox"
+                className="presence__checkbox"
+              />
+              <label htmlFor="lendemain" className="presence__title">
+                Je serai présent le lendemain
+              </label>
+            </div>
+            <div className="presence__box">
+              <input
+                {...registerPresence("absent")}
+                type="checkbox"
+                className="presence__checkbox"
+              />
+              <label htmlFor="absent" className="presence__title">
+                Je ne pourrai pas être présent à votre mariage
+              </label>
+            </div>
+            <div className="form__boxBtn">
+              <button className="form__btn">Envoyer</button>
+            </div>
+            
+          </form>
+        )}
+        {/*  message confirmation */}
+        {displayRemerciement === true && (
+          <div className="presence__msg">
+            Votre réponse a été prise en compte
+          </div>
+        )}
       </div>
     </div>
   );
