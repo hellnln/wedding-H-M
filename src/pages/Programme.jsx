@@ -21,7 +21,12 @@ function Program() {
                         <li className="progLeft__text"><FontAwesomeIcon icon="church" className="progLeft__picto"  /> - 15h45 : Église</li>
                         <li className="progLeft__text"><FontAwesomeIcon icon="champagne-glasses" className="progLeft__picto" /> - 17h00 : Cocktail</li>
                         <li className="progLeft__text"><FontAwesomeIcon icon="bell-concierge" className="progLeft__picto" />  - 20h00 : Dîner</li>
-                        <li className="progLeft__text"><img src={Dancers} alt='icone danseurs' className='progLeft__img' /> - 23h30 : Let's Dance</li>
+                        <div className="danceBox">
+                        <img src={Dancers} alt='icone danseurs' className='progLeft__img' /> 
+                        <li className="progLeft__text"><FontAwesomeIcon icon="bell-concierge" className="progLeft__pictodance" /> - 23h30 : Let's Dance</li>
+                        </div>
+                        
+                        
                     </ul>
                 </div>
                 <div className='progRight'>
