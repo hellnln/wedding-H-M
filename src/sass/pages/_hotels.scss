@@ -27,16 +27,32 @@
     padding: 20px;
     }
 
+    &__listBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px 0 10px 0;
+    }
+
+    &__textBox{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
     &__text{
         font-family: $font-text;
         color: $color-font-dark;
         text-align: justify;
-        padding: 5px 0 5px 50px;
+        padding: 5px 0 5px 5px;
         
     }
 
-    &__link{
+    &__textTitle{
+        font-family: $font-text;
+        color: $color-font-dark;
         font-weight: 600;
+        padding: 5px 0 5px 50px;
     }
 
     &__box{
@@ -61,7 +77,27 @@
         
     }
 
+
 }
+
+.btn {
+    &__reservation {
+        padding: 5px 15px 5px 15px;
+        font-family: $font-text;
+        font-size: 15px;
+        background-color: $color-font-dark;
+        color: $color-font-light;
+        border: none;
+        border-radius: 5px;
+        width: 130px;
+        @include box-shadow;
+    }
+
+    &__link {
+        color: $color-font-light;
+    }
+}
+
 
 a {
     text-decoration: none;

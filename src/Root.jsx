@@ -29,7 +29,7 @@ function Routing() {
                <Route path="/" element={<Home />} />
                <Route path="/programme" element={<Program />} />
                <Route path="/hotels" element={<Hotels />} />
-               <Route path="/photos" element={<Photos />} />
+               {/* <Route path="/photos" element={<Photos />} /> */}
                <Route path="/confirmation" element={<Confirmation />} />
             </Routes>
          
