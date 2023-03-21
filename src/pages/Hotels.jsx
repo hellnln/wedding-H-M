@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { Link } from 'react-router-dom';
 
 function Hotels() {
   return (
@@ -20,14 +21,14 @@ function Hotels() {
                 <FontAwesomeIcon icon="caravan" className="logement__text" />
                 <p className="logement__text">En camping-car : vous pourrez garer votre véhicule sur le parking du gîte.</p>
               </div>
-                <button className='btn__reservation'>Réserver</button>
+              <button className='btn__reservation'><Link to='/contactForm' className='btn__link'>Réserver</Link></button>
             </li>
             <li className="logement__listBox">
               <div className='logement__textBox'>
               <FontAwesomeIcon icon="tent" className="logement__text" />
               <p className="logement__text">Sous la tente : vous pourrez planter votre tente sur le terrain du gîte</p>
               </div>
-              <button className='btn__reservation'>Réserver</button>
+              <button className='btn__reservation'><Link to='/contactForm' className='btn__link'>Réserver</Link></button>
              </li>
           </ul>
         </article>
