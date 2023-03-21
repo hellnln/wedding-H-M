@@ -43,9 +43,9 @@ function Confirm() {
 
   return (
     <div>
-      <div className="confirm">
-        <h1 className="confirm__title">Confirmez votre présence</h1>
-        <p className="confirm__text">
+      <div className="titre">
+        <h1 className="titre__page">Confirmez votre présence</h1>
+        <p className="titre__text">
           Pour confirmer votre présence à notre mariage, écrivez votre nom et
           prénom et cliquez sur rechercher.
           <br />
@@ -152,7 +152,7 @@ function Confirm() {
         )}
         {/*  message confirmation */}
         {displayRemerciement === true && (
-          <div className="presence__msg">
+          <div className="confirmation__msg">
             Votre réponse a été prise en compte
           </div>
         )}

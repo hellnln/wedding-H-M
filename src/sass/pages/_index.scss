@@ -10,20 +10,26 @@ ul {
 
 .titre{
   display: flex;
+  flex-direction: column;
   width: 100%;
   margin: auto;
   padding: 40px;
   justify-content: center;
   &__page {
     display: flex;
+    margin: auto;
     flex-direction: column;
     justify-content: center;
     font-family: $font-title;
     color: $color-font-dark;
     font-size: 40px;
     font-weight: 400;
-  
   }
+  &__text {
+    margin: 30px;
+    text-align: center;
+    font-family: $font-text;
+}
 }
 
 @media screen and (max-width: 425px) {

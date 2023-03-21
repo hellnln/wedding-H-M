@@ -1,0 +1,18 @@
+.contactSubmit {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 0;
+    
+    &__textaera {
+        padding: 5px;
+        margin: 30px 0 0 0;
+        height: 100px;
+
+    }
+
+    &__msg {
+        font-family: $font-text;
+        margin: auto;
+    }
+
+}
