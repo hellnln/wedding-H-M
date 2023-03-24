@@ -10,7 +10,7 @@ function Reservation() {
           planter une tente afin de vous réserver le meilleur emplacement !
           <br />
           Faites-nous savoir également si vous souhaiter prendre le petit
-          déjeuner au gîte (nombre de personne à prévoir).
+          déjeuner au gîte (nombre de personnes à prévoir).
         </p>
       </div>
       <div>
